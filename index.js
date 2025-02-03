@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let foods = JSON.parse(localStorage.getItem("foods"));
 
-    if (foods.length == 0) {
+    if (foods == null || foods.length == 0) {
         initializeFoods()
         foods = getFoodsFromStorage();
     }
@@ -66,13 +66,13 @@ function populateDishes(foods) {
         img.src = food.image;
         img.alt = food.title;
 
-        let title = document.createElement("h3");
+        let title = document.createElement("span");
         title.innerText = food.title;
 
-        let description = document.createElement("h5");
+        let description = document.createElement("span");
         description.innerText = food.description;
 
-        let price = document.createElement("h4");
+        let price = document.createElement("span");
         price.innerText = food.price;
 
         foodDiv.appendChild(img);

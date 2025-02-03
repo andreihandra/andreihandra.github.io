@@ -69,6 +69,7 @@
 body {
     margin: 0;
     padding: 0;
+    padding-bottom: 40px;
 }
 
 .filter-section {
@@ -89,6 +90,10 @@ body {
     border: none;
     text-transform: uppercase;
     color: white;
+}
+
+.menu-select:focus {
+    outline: none;
 }
 
 .slider {
@@ -119,6 +124,8 @@ body {
     padding-inline-end: 40px;
     padding-top: 40px;
     box-shadow: 0 0 6px #d5c4c4;
+    gap: 20px;
+    padding-bottom: 40px;
 }
 
 .food:hover {
