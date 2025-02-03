@@ -16,6 +16,11 @@
     margin-inline-end: 10px;
 }
 
+#logo-title {
+    color: white;
+     float: left;
+}
+
 .upper-navigation {
     display: flex;
     flex-flow: row nowrap;
@@ -24,7 +29,7 @@
     padding-inline-end: 10%;
 }
 
-.upper-menu {
+#upper-menu {
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;

@@ -24,7 +24,7 @@ function removeFood() {
             window.history.back();
         }
     } else {
-        alert("There were no foods with the title of " + title);
+        alert(`There were no foods with the title of ${title}`);
     }
 
 }
@@ -39,7 +39,7 @@ function addFood() {
         alert("All fields are mandatory");
     } else {
         let foods = getFoodsFromStorage();
-        foods.push({title: title, image: image, description: description, price: "$"+price});
+        foods.push({title: title, image: image, description: description, price: `$${price}`});
         setFoodsToStorage(foods);
         alert("Item added successfully");
         let res = confirm("Would you like to add more items?");
