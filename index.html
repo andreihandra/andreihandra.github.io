@@ -4,9 +4,52 @@
         <title>
           Food ordering system
         </title>
+        <link href="style.css" rel="stylesheet">
+        <script src="index.js"></script>
     </head>
     <body>
-      <h1>Hello World!</h1>
+        <div class="image">
+            <div class="upper-navigation">
+                <div>
+                    <img id="logo-img" src="logo.png"/>
+                    <h5 id="logo-title">Eurekka <br> Caffe</h5>
+                </div>
+                <div id="upper-menu"></div>
+            </div>
+            <div class="flex-container-title">
+                <h1 id="title">Ordering Food</h1>
+                <h3 id="description">Maecenas vel tellus at magna sagittis venenatis.Integer pretium auctor magna, egestas justo gravida vitae. In lacinia auctor auctor</h3>
+            </div>
+        </div>
 
+        <div class="filter-section">
+            <div>
+                <select class="menu-select" name="category" onchange="loseFocus(this)">
+                    <option value="">Category</option>
+                    <option value="cat1">Category 1</option>
+                    <option value="cat2">Category 2</option>
+                </select>
+
+                <select class="menu-select" name="sorting" onchange="loseFocus(this)">
+                    <option value="">Sorting</option>
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
+                    <option value="discount">Discount</option>
+                </select>
+
+                <select class="menu-select" name="type" onchange="loseFocus(this)">
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="meat">Meat</option>
+                </select>
+            </div>
+
+            <div class="slider">
+                <h4 style="text-transform: uppercase;">Price</h4>
+                <h5 id="start-label">$0</h5>
+                <input id="price-range" type="range" value="0">
+                <h5>$100</h5>
+            </div>
+        </div>
+        <div id="food-section"></div>
     </body>
 </html>

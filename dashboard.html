@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link href="dashboard-style.css" rel="stylesheet">
+        <script src="dashboard.js"></script>
+    </head>
+
+    <body>
+        <button onclick="toggleFields('remove')">Remove food</button>
+        <button onclick="toggleFields('add')">Add food</button>
+        <br>
+        <div id="add" class="hidden">
+            Title: <input type="text" id="title"/>
+            Image url: <input type="text" id="image"/>
+            Description: <input type="text" id="description"/>
+            Price: <input type="number" min="1" max="100" id="price"/>
+            <input type="button" value="Add" onclick="addFood()" />
+        </div> 
+        <div id="remove" class="hidden">
+            Food name: <input type="text" id="foodName"/>
+            <input type="button" value="Remove" onclick="removeFood()"/>
+        </div>
+    </body>
+</html>
