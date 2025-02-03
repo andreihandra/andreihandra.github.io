@@ -21,7 +21,7 @@ function removeFood() {
         alert("Foods removed successfully");
         let res = confirm("Would you like to remove other foods?")
         if (res == false) {
-            window.history.back();
+            window.location.href = document.referrer || "index.html"
         }
     } else {
         alert(`There were no foods with the title of ${title}`);
